@@ -1,12 +1,16 @@
 <template>
   <div class="navbar">
+    <p @click="backToMain()" class="firstName">
+      Josefine
+      <span class="lastName">Magnussen</span>
+    </p>
     <button class="button" @click="showNavbar = !showNavbar">
       <span>Menu</span>
     </button>
     <menu v-if="showNavbar" id="myNav" class="overlay">
       <button class="button" @click="showNavbar = false">Close</button>
       <div class="overlay-content">
-        <br>
+        <br />
         <router-link to="/">
           <span @click="showNavbar = false">Home</span>
         </router-link>
@@ -32,18 +36,39 @@ export default {
     return {
       showNavbar: false
     };
-  }
+  },
+
+  methods: {
+    backToMain() {
+      this.$router.push("/");
+    }
+  },
 };
 </script>
 <style scoped>
+.firstName {
+  cursor: pointer;
+  float: left;
+  color: #402131;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0 5%;
+}
+.lastName {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #402131;
+  font-size: 30px;
+}
 .navbar {
   width: 100%;
   padding: 20px;
 }
 .button {
-  
+  border-radius: 5px;
   float: right;
-  margin-right: 18%;
+  margin-right: 10%;
   font-size: 20px;
   width: 150px;
   padding: 10px;
