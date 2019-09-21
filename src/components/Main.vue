@@ -2,10 +2,10 @@
   <div class="hello">
     <div class="grid-container">
       <div class="grid-item photo">
-        <img class="image" src="../assets/images/Blank Instagram Portraits.png" alt="Josefine Magnussen">
+        <img class="image" src="../assets/images/Josefine Magnussen.jpg" alt="Josefine Magnussen">
       </div>
       <div class="grid-item text">
-        <h1> Josefine Magnussen </h1>
+        <!-- <h1> Josefine Magnussen </h1> -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, voluptate. Quaerat, autem aut amet temporibus et repellendus vel eos quis nemo officiis numquam magni dignissimos consectetur perspiciatis a voluptas cupiditate.</p>
       <!-- <a href=""> Mine Prosjekter</a>
       <br>
@@ -36,7 +36,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .photo{
