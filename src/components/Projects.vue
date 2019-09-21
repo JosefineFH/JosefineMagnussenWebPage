@@ -2,7 +2,7 @@
   <div class="container">
     <h1>Mine Prosjekter</h1>
     <section class="card">
-      <img src="../assets/images/Blank Instagram Portraits.png" alt />
+      <img src="../assets/images/GirlCamp.png" alt />
       <div>
         <h3>Girl Camp</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo numquam sit hic dolore quo autem quaerat non quis a placeat, facilis amet ullam debitis, modi adipisci ipsam aut harum!</p>
@@ -47,7 +47,7 @@ export default {
 <style>
 img{
     /* max-width: 1100px; */
-    width: 100%;
+    width: auto;
 }
 
 a{
@@ -103,7 +103,7 @@ a{
 }
 
 .card img {
-    height: 400px;
+    width: 200px;
 }
 
 .card > div {
