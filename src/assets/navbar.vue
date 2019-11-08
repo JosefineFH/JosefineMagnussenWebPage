@@ -27,6 +27,10 @@
         </router-link>
       </div>
     </menu>
+    <p @click="backToMain()" class="name">
+      Josefine
+      <span class="nameLast">Magnussen</span>
+    </p>
   </div>
 </template>
 <script>
@@ -42,7 +46,7 @@ export default {
     backToMain() {
       this.$router.push("/");
     }
-  },
+  }
 };
 </script>
 <style scoped>
@@ -61,6 +65,7 @@ export default {
   color: #402131;
   font-size: 30px;
 }
+
 .navbar {
   width: 100%;
   padding: 20px;
@@ -127,5 +132,53 @@ export default {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+@media only screen and (min-width: 600px) {
+  .name {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  * {
+    /* border: lightblue 1px solid; */
+  }
+  .navbar {
+    height: 100px;
+    width: 100%;
+    padding: 0;
+  }
+  .name {
+    margin: 0;
+    text-align: center;
+    color: #402131;
+    font-size: 30px;
+  }
+  .nameLast {
+    font-weight: bold;
+  }
+  .firstName {
+    display: none;
+  }
+  .lastName {
+    padding: 0px;
+    font-size: 25px;
+    margin: 0 0;
+    display: none;
+  }
+
+  .button {
+    border-radius: 0px;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    background: #402131;
+    border: none;
+    color: white;
+    border: solid #402131 2px;
+  }
+  .overlay {
+  padding: 0px;
+ 
+}
 }
 </style>>

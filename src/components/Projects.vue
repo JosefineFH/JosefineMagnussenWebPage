@@ -5,9 +5,10 @@
       <img src="../assets/images/GirlCamp.png" alt />
       <div>
         <h3>Girl Camp</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo numquam sit hic dolore quo autem quaerat non quis a placeat, facilis amet ullam debitis, modi adipisci ipsam aut harum!</p>
-        <a href="#">Code On GitHub</a>
-        <a href="#">Live Demo</a>
+        <p>Frontend prosjekt der jeg i hovedsak kun har bruk rammeverket vue.js</p>
+        <a href="https://github.com/JosefineFM/Portflio/tree/master/Vue/girlcamp">Code på GitHub</a>
+        <br>
+        <a href="https://girlcamp01.firebaseapp.com/#/">Live Demo</a>
       </div>
     </section>
 
@@ -16,20 +17,23 @@
       <div>
         <h3 >Andre Prosjekt</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo numquam sit hic dolore quo autem quaerat non quis a placeat, facilis amet ullam debitis, modi adipisci ipsam aut harum!</p>
-        <a href="#">Code</a>
-        <a href="#">Live Demo</a>
+        <p>Test bruker email: test@test.no</p>
+        <p>Test passord: test123</p>
+        <a href="https://github.com/JosefineFM/Portflio/tree/master/adminmanager">Code på GitHub</a>
+        <br>
+        <a href="https://vue-prod-3615c.firebaseapp.com/#/login?redirect=%2F">Live Demo</a>
       </div>
     </section>
 
-    <section class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-offset= "400">
-      <img src="" alt />
+    <!-- <section class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-offset= "400">
+      <img src="../assets/images/Blank Instagram Portraits.png" alt />
       <div>
         <h3 >Tredje Prosjekt</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo numquam sit hic dolore quo autem quaerat non quis a placeat, facilis amet ullam debitis, modi adipisci ipsam aut harum!</p>
         <a href="#">Code</a>
-        <a href="#">Live Demo</a>
+        <a href="">Live Demo</a>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 <script>
@@ -54,6 +58,11 @@ export default {
 a{
     color: #333;
     text-decoration: none;
+ 
+}
+a:hover{
+  color: #b50d10;
+     font-weight: bold;
 }
 
 .container {
