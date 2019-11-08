@@ -7,6 +7,7 @@
      <a href="#"> Github </a>
      <a href="#"> Linktin</a>
      </div>
+     <div class="socialMedia"> Intagram Img</div>
     </div>
 </template>
 <style>

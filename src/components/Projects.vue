@@ -12,7 +12,7 @@
     </section>
 
     <section class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-offset= "400">
-      <img src="../assets/images/Blank Instagram Portraits.png" alt />
+      <img src="" alt />
       <div>
         <h3 >Andre Prosjekt</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo numquam sit hic dolore quo autem quaerat non quis a placeat, facilis amet ullam debitis, modi adipisci ipsam aut harum!</p>
@@ -22,7 +22,7 @@
     </section>
 
     <section class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-offset= "400">
-      <img src="../assets/images/Blank Instagram Portraits.png" alt />
+      <img src="" alt />
       <div>
         <h3 >Tredje Prosjekt</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo numquam sit hic dolore quo autem quaerat non quis a placeat, facilis amet ullam debitis, modi adipisci ipsam aut harum!</p>
@@ -45,9 +45,10 @@ export default {
 };
 </script>
 <style>
-img{
-    /* max-width: 1100px; */
-    width: auto;
+.icons{
+  height: 50px;
+  width: 50px;
+   border-radius: 50%; 
 }
 
 a{
@@ -88,7 +89,7 @@ a{
 
 .card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-gap: 2rem;
     background: #f1f1f1;
     margin-bottom: 2rem;
@@ -103,6 +104,7 @@ a{
 }
 
 .card img {
+  padding: 20px;
     width: 200px;
 }
 
