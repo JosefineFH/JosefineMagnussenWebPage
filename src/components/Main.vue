@@ -5,22 +5,39 @@
     </div>
     <div class="text">
       <h2>Hei</h2>
+      <p>Mitt navn er Josefine.</p>
       <p>
-        Jeg er Josefine.
-        En IT-Utvikler fra Larvik, Norge.
-        Jeg har jobbet med frontend og backend,
-        altså jeg er en fullstacker.
+        Jeg er en IT-Utvikler fra Larvik, Norge.
+        For det meste bruker jeg tiden foran pc der jeg koder for det mest frontend men også en del backend.
+        Jeg er altså en full-stack utvikler som er kreativ, nyskjerig og brenner for faget sitt.
       </p>
+<div class="vl list">
+      <ul style="float: left;">
+        <h3>Frontend</h3>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JSON</li>
+        <li>Vue.js</li>
+      </ul>
+
+      <ul style="float: left;">
+        <h3>Backend</h3>
+        <li>C#</li>
+        <li>ASP.Net core</li>
+        <li>PHP</li>
+        <li>API i php, asp og json</li>
+        <li>SQL</li>
+      </ul>
+      </div>
     </div>
     <div class="grid-item footer"></div>
   </div>
 </template>
+
 <style scoped>
-* {
-  /* border: solid 1px violet; */
-}
 .grid-container {
-  margin-top: 30px;
+  margin-top: 5%;
   display: grid;
   grid-gap: 10px;
 }
@@ -31,12 +48,10 @@
   margin-right: auto;
   width: 50%;
 }
-
 .photo {
   grid-column: 1;
   grid-row: 1;
 }
-
 .text {
   grid-column: 2;
   grid-row: 1;
@@ -44,15 +59,30 @@
 .footer {
   grid-column: 1 / span 2;
 }
-
-p,
-h1 {
-  padding-top: 10%;
+p {
   padding-right: 25%;
+  line-height: 32px;
 }
-@media only screen and (max-width: 600px) {
+h2 {
+  padding-top: 5%;
+}
+ul {
+  list-style-type: none;
+}
+li{
+  padding-top: 10px;
+}
+.vl{
+  border-left: 2px solid #402131;
+  height: 300px;
+}
+
+@media only screen and (max-width: 800px) {
   body {
     background-color: lightblue;
+  }
+  .grid-container{
+     margin-top: 5%;
   }
   .text {
     grid-column: 1;
@@ -73,5 +103,9 @@ h1 {
   p {
     padding: 0;
   }
+  .vl{
+  border-left: 2px solid #402131;
+  height: 600px;
+}
 }
 </style>
