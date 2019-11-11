@@ -21,10 +21,10 @@
         <router-link class="link" to="/Projects">
           <span @click="showNavbar = false">Projects</span>
         </router-link>
-
-        <router-link class="link" to="/Contact">
+      <a class="link" href="mailto:josefine.magnussen@hotmail.com" target="_top">Send mail</a>
+        <!-- <router-link class="link" to="/Contact">
           <span @click="showNavbar = false">Contact</span>
-        </router-link>
+        </router-link> -->
       </div>
     </div>
     

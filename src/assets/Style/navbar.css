@@ -23,6 +23,7 @@
 
 /* Menu button a link */
 .menu {
+  cursor: pointer;
   text-align: center;
   border-radius: 5px;
   float: right;

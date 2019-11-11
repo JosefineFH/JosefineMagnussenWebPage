@@ -46,7 +46,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
 }
 .photo {
   grid-column: 1;
@@ -57,6 +57,7 @@
   grid-row: 1;
 }
 .footer {
+  height: 50px;
   grid-column: 1 / span 2;
 }
 p {
