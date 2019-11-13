@@ -8,7 +8,7 @@
       <a class="menu" @click="showNavbar = !showNavbar" >Menu</a>
 
     <div v-if="showNavbar" id="myNav" class="overlay">
-      <a class="menu" @click="showNavbar = false"> Close </a>
+      <a class="menuOpen" @click="showNavbar = false"> Close </a>
       <div class="overlay-content">
         <br />
         <router-link class="link" to="/">

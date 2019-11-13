@@ -28,19 +28,32 @@
   border-radius: 5px;
   float: right;
   margin-right: 10%;
-  font-size: 20px;
+  font-size: 25px;
   width: 150px;
   padding: 10px;
-  background: #402131;
+  /* background: #402131; */
   border: none;
+  /* color: white; */
+  /* border: solid #402131 2px; */
+}
+.menuOpen {
+  cursor: pointer;
+  text-align: center;
+  float: right;
+  margin-right: 10%;
+  font-size: 25px;
+  width: 150px;
+  padding: 10px;
   color: white;
-  border: solid #402131 2px;
 }
 
-.menuOpen:hover {
-  border: solid #402131 2px;
-  color: #402131;
+.menu:hover {
   transition: all 1s, border 0.5s;
+  font-weight: bold;
+}
+
+.menuOpen:active {
+  color: white;
 }
 
 /* Overlay menu */
@@ -54,7 +67,7 @@
   padding-top: 20px;
 
   background-color: rgb(64, 33, 49); /* Black fallback color */
-  background-color: rgba(64, 33, 49, 0.9); /* Black w/opacity */
+  background-color: rgba(64, 33, 49, 1); /* Black w/opacity */
 }
 
 .overlay-content {
