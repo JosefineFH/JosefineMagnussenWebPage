@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <nav class="navbar">
     <p @click="backToMain()" class="firstName">
       Josefine
       <span class="lastName">Magnussen</span>
@@ -32,7 +32,7 @@
       Josefine
       <span class="nameLast">Magnussen</span>
     </p> -->
-  </div>
+  </nav>
 </template>
 <script>
 export default {

@@ -1,5 +1,5 @@
 <template>
-  <div class="grid-container">
+  <main class="grid-container">
     <div class="grid-item photo">
       <img class="image" src="../assets/images/Josefine Magnussen.jpg" alt="Josefine Magnussen" />
     </div>
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="grid-item footer"></div>
-  </div>
+  </main>
 </template>
 
 <style scoped>
@@ -40,13 +40,15 @@
   margin-top: 5%;
   display: grid;
   grid-gap: 10px;
+    grid-template-columns: auto auto;
+
 }
 .image {
-  padding-top: 50px;
+  padding: 15%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 100%;
 }
 .photo {
   grid-column: 1;
@@ -55,13 +57,13 @@
 .text {
   grid-column: 2;
   grid-row: 1;
+  padding: auto;
 }
 .footer {
   height: 50px;
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
 }
 p {
-  padding-right: 25%;
   line-height: 32px;
 }
 h2 {
@@ -106,7 +108,7 @@ li{
   }
   .vl{
   border-left: 2px solid #402131;
-  height: 600px;
+  height: 300px;
 }
 }
 </style>

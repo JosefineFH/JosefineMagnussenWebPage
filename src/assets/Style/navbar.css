@@ -23,6 +23,8 @@
 
 /* Menu button a link */
 .menu {
+  font-weight: bold;
+
   cursor: pointer;
   text-align: center;
   border-radius: 5px;
@@ -31,10 +33,7 @@
   font-size: 25px;
   width: 150px;
   padding: 10px;
-  /* background: #402131; */
   border: none;
-  /* color: white; */
-  /* border: solid #402131 2px; */
 }
 .menuOpen {
   cursor: pointer;
@@ -52,10 +51,6 @@
   font-weight: bold;
 }
 
-.menuOpen:active {
-  color: white;
-}
-
 /* Overlay menu */
 .overlay {
   height: 100%;
@@ -65,7 +60,6 @@
   top: 0;
   left: 0;
   padding-top: 20px;
-
   background-color: rgb(64, 33, 49); /* Black fallback color */
   background-color: rgba(64, 33, 49, 1); /* Black w/opacity */
 }
@@ -125,16 +119,11 @@
   }
 
   .menu {
-    border-radius: 0px;
-    margin: 0;
-    width: 100%;
-    padding: 10px;
-    border: none;
     color: #402131;
-    border: solid white 2px;
-    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
     font-weight: bold;
-    font-size: 36px;
   }
   .overlay {
     padding: 0px;
@@ -149,5 +138,12 @@
     color: #402131;
     display: block;
     transition: 0.3s;
+  }
+  .menuOpen {
+    color: #402131;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
   }
 }
