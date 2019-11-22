@@ -25,3 +25,7 @@ h1{
   color: white;
   transition: all .35s;
 }
+
+footer{
+  border: solid black 1px;
+}

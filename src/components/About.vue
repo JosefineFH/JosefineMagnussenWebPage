@@ -1,9 +1,9 @@
 <template>
-  <div class="grid-container">
-    <div class="grid-item photo">
+  <main class="container">
+    <div class="grid-item">
       <img class="image" src="../assets/images/IMG_0846.jpg" alt="Josefine Magnussen" />
     </div>
-    <div class="text">
+    <div class="grid-text">
       <h2>Om Josefine</h2>
       <!-- <p>timeline</p> -->
       <p>
@@ -28,11 +28,11 @@
       <a href="mailto:josefine.magnussen@hotmail.com" target="_top">Kontakt meg gjerne på mail.</a>
       <!-- <router-link class="link"  to="/projects"> Mine prosjekter</router-link> -->
     </div>
-    <div class="grid-item footer"></div>
-  </div>
+  </main>
 </template>
 
 <style scoped>
+
 a{
   color: #402131;
   font-size: 20px;
@@ -41,76 +41,60 @@ a:hover{
   color: grey;
   font-size: 20px;
 }
-.grid-container {
-  margin-top: 5%;
+.container {
+  min-height: 300px;
+  width: 100%;
   display: grid;
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "image content";
+  margin-bottom: 150px;
 }
-.image {
-  padding-top: 50px;
+
+.grid-item {
+  grid-area: image;
+}
+
+.grid-text {
+  grid-area: content;
+  color: #2b1621;
+  height: 300px;
+  padding-right: 60px;
+
+}
+img {
+   padding: 3%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 70%;
 }
-.photo {
-  grid-column: 1;
-  grid-row: 1;
-}
-.text {
-  grid-column: 2;
-  grid-row: 1;
-}
-.footer {
-  height: 50px;
-
-  grid-column: 1 / span 2;
-}
-.link {
-  text-align: center;
-  border-radius: 5px;
-  margin-right: 10%;
-  font-size: 20px;
-  width: 150px;
-  padding: 10px;
-  background: #402131;
-  border: none;
-  color: white;
-  border: solid #402131 2px;
-  text-decoration: none;
-}
-p {
-  padding-right: 25%;
-  line-height: 32px;
-}
-h2 {
-  padding-top: 5%;
-}
-ul {
-  list-style-type: none;
-}
-li {
-  padding-top: 10px;
-}
-.vl {
-  border-left: 2px solid #402131;
-  height: 300px;
-}
-
+ a{
+    padding-bottom: 100px;
+    text-decoration: none;
+    font-weight: bold;
+ }
+ a:hover{
+   color: purple;
+ }
 @media only screen and (max-width: 800px) {
-  body {
-    background-color: lightblue;
+  .container {
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "image"
+      "content";
+       margin-bottom: 150px;
   }
-  .grid-container {
-    margin-top: 5%;
-  }
-  .text {
-    grid-column: 1;
-    grid-row: 2;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+  .grid-text {
+    grid-area: content;
+    color: #2b1621;
+    height: 300px;
+    margin-bottom: 150px;
+    padding-left: 60px;
   }
   .image {
     display: initial;
@@ -120,12 +104,9 @@ li {
     margin-right: auto;
     width: 50%;
   }
-  p {
-    padding: 0;
-  }
-  .vl {
-    border-left: 2px solid #402131;
-    height: 600px;
-  }
+ a{
+    padding-bottom: 100px;
+ }
+
 }
 </style>

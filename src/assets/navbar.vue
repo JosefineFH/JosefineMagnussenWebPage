@@ -22,36 +22,27 @@
           <span @click="showNavbar = false">Projects</span>
         </router-link>
       <a class="link" href="mailto:josefine.magnussen@hotmail.com" target="_top">Send mail</a>
-        <!-- <router-link class="link" to="/Contact">
-          <span @click="showNavbar = false">Contact</span>
-        </router-link> -->
       </div>
     </div>
-    
-    <!-- <p @click="backToMain()" class="name">
-      Josefine
-      <span class="nameLast">Magnussen</span>
-    </p> -->
   </nav>
 </template>
 <script>
 export default {
-  name: "about",
-  data() {
+  name: 'about',
+  data () {
     return {
       showNavbar: false
-    };
+    }
   },
 
   methods: {
 
-    backToMain() {
-      this.$router.push("/");
+    backToMain  () {
+      this.$router.push('/')
     }
   }
-};
+}
 </script>
 <style>
 @import './Style/navbar.css';
 </style>
-

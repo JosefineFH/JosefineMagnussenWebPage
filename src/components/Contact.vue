@@ -1,6 +1,6 @@
 <template>
     <div>
-     <h1>Contact me</h1>   
+     <h1>Contact me</h1>
      <div class="main">
      <a href="#"> Instagram </a>
      <p>Send Mail </p>
@@ -12,5 +12,4 @@
 </template>
 <style>
 @import '../assets/Style/main.css';
-    
 </style>

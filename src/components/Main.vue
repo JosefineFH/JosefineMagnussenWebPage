@@ -1,68 +1,75 @@
 <template>
-  <main class="grid-container">
-    <div class="grid-item photo">
-      <img class="image" src="../assets/images/Josefine Magnussen.jpg" alt="Josefine Magnussen" />
+  <main class="container">
+    <div class="grid-item">
+      <img
+        class="image"
+        src="../assets/images/Josefine Magnussen.jpg"
+        alt="Josefine Magnussen"
+      />
     </div>
-    <div class="text">
+    <div class="grid-text">
       <h2>Hei</h2>
       <p>Mitt navn er Josefine.</p>
       <p>
-        Jeg er en IT-Utvikler fra Larvik, Norge.
-        For det meste bruker jeg tiden foran pc der jeg koder for det mest frontend men også en del backend.
-        Jeg er altså en full-stack utvikler som er kreativ, nyskjerig og brenner for faget sitt.
+        Jeg er en IT-Utvikler fra Larvik, Norge. For det meste bruker jeg tiden
+        foran pc der jeg koder for det mest frontend men også en del backend.
+        Jeg er altså en full-stack utvikler som er kreativ, nyskjerig og brenner
+        for faget sitt.
       </p>
-<div class="vl list">
-      <ul style="float: left;">
-        <h3>Frontend</h3>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>JSON</li>
-        <li>Vue.js</li>
-      </ul>
+      <div class="vl list">
+        <ul style="float: left;">
+          <h3>Frontend</h3>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>JSON</li>
+          <li>Vue.js</li>
+        </ul>
 
-      <ul style="float: left;">
-        <h3>Backend</h3>
-        <li>C#</li>
-        <li>ASP.Net core</li>
-        <li>PHP</li>
-        <li>API i php, asp og json</li>
-        <li>SQL</li>
-      </ul>
+        <ul style="float: left;">
+          <h3>Backend</h3>
+          <li>C#</li>
+          <li>ASP.Net core</li>
+          <li>PHP</li>
+          <li>API i php, asp og json</li>
+          <li>SQL</li>
+        </ul>
       </div>
     </div>
-    <div class="grid-item footer"></div>
   </main>
 </template>
 
 <style scoped>
-.grid-container {
-  margin-top: 5%;
+.container {
+  min-height: 300px;
+  width: 100%;
   display: grid;
-  grid-gap: 10px;
-    grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* grid-gap: 10px; */
+  grid-template-areas: "image content";
+    margin-bottom: 150px;
 
 }
-.image {
-  padding: 15%;
+.grid-item {
+  grid-area: image;
+}
+.grid-text {
+  grid-area: content;
+  color: #2b1621;
+  height: 300px;
+  padding-right: 60px;
+
+}
+
+img {
+  padding: 3%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 70%;
 }
-.photo {
-  grid-column: 1;
-  grid-row: 1;
-}
-.text {
-  grid-column: 2;
-  grid-row: 1;
-  padding: auto;
-}
-.footer {
-  height: 50px;
-  grid-column: 1 / span 3;
-}
+
 p {
   line-height: 32px;
 }
@@ -72,10 +79,10 @@ h2 {
 ul {
   list-style-type: none;
 }
-li{
+li {
   padding-top: 10px;
 }
-.vl{
+.vl {
   border-left: 2px solid #402131;
   height: 300px;
 }
@@ -84,16 +91,22 @@ li{
   body {
     background-color: lightblue;
   }
-  .grid-container{
-     margin-top: 5%;
+  .container {
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "image"
+      "content";
   }
-  .text {
-    grid-column: 1;
-    grid-row: 2;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+  .grid-text {
+    grid-area: content;
+    color: #2b1621;
+    height: 300px;
+    margin-bottom: 200px;
+    padding-left: 60px;
   }
   .image {
     display: initial;
@@ -106,9 +119,9 @@ li{
   p {
     padding: 0;
   }
-  .vl{
-  border-left: 2px solid #402131;
-  height: 300px;
-}
+  .vl {
+    border-left: 2px solid #402131;
+    height: 300px;
+  }
 }
 </style>
