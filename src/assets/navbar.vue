@@ -4,11 +4,12 @@
       Josefine
       <span class="lastName">Magnussen</span>
     </p>
-
-      <a class="menu" @click="showNavbar = !showNavbar" >Menu</a>
+<img class="menu" src="../assets/images/menu.png" alt="Menu" @click="showNavbar = !showNavbar">
+      <!-- <a class="menu" @click="showNavbar = !showNavbar" >Menu</a> -->
 
     <div v-if="showNavbar" id="myNav" class="overlay">
-      <a class="menuOpen" @click="showNavbar = false"> Close </a>
+      <img class="menuOpen" @click="showNavbar = false" src="../assets/images/close.png" alt="Close">
+      <!-- <a class="menuOpen" @click="showNavbar = false"> Close </a> -->
       <div class="overlay-content">
         <br />
         <router-link class="link" to="/">

@@ -24,14 +24,13 @@
 /* Menu button a link */
 .menu {
   font-weight: bold;
-
   cursor: pointer;
   text-align: center;
   border-radius: 5px;
   float: right;
   margin-right: 10%;
   font-size: 25px;
-  width: 150px;
+  width: 40px;
   padding: 10px;
   border: none;
 }
@@ -41,9 +40,9 @@
   float: right;
   margin-right: 10%;
   font-size: 25px;
-  width: 150px;
+  width: 40px;
   padding: 10px;
-  color: white;
+  color: #402131;
 }
 
 .menu:hover {
@@ -60,8 +59,7 @@
   top: 0;
   left: 0;
   padding-top: 20px;
-  background-color: rgb(64, 33, 49); /* Black fallback color */
-  background-color: rgba(64, 33, 49, 1); /* Black w/opacity */
+  background-color: white;
 }
 
 .overlay-content {
@@ -76,13 +74,13 @@
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #e6e0da;
+  color: #402131;
   display: block;
   transition: 0.3s;
 }
 
 .overlay .link:hover {
-  color: white;
+  color: #402131;
 }
 
 .overlay .closebtn {
@@ -127,8 +125,7 @@
   }
   .overlay {
     padding: 0px;
-    background-color: white; /* Black fallback color */
-    background-color: white; /* Black w/opacity */
+    background-color: white; 
     color: #402131;
   }
   .overlay .link {

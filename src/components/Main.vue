@@ -35,11 +35,15 @@
           <li>SQL</li>
         </ul>
       </div>
+      <div class="footer"></div>
     </div>
   </main>
 </template>
 
 <style scoped>
+main {
+  padding-bottom: 20px;
+}
 .container {
   min-height: 300px;
   width: 100%;
@@ -49,6 +53,7 @@
   /* grid-gap: 10px; */
   grid-template-areas: "image content";
     margin-bottom: 150px;
+    
 
 }
 .grid-item {
@@ -88,10 +93,14 @@ li {
 }
 
 @media only screen and (max-width: 800px) {
+  .footer{
+    padding-bottom: 150px;
+  }
   body {
     background-color: lightblue;
   }
   .container {
+    margin-bottom: 150px;
     min-height: 300px;
     width: 100%;
     display: grid;
@@ -100,6 +109,7 @@ li {
     grid-template-areas:
       "image"
       "content";
+
   }
   .grid-text {
     grid-area: content;
@@ -121,7 +131,7 @@ li {
   }
   .vl {
     border-left: 2px solid #402131;
-    height: 300px;
+    height: 550px;
   }
 }
 </style>
