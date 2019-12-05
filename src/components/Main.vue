@@ -1,11 +1,7 @@
 <template>
   <main class="container">
     <div class="grid-item">
-      <img
-        class="image"
-        src="../assets/images/Josefine Magnussen.jpg"
-        alt="Josefine Magnussen"
-      />
+      <img class="image" src="../assets/images/Josefine Magnussen.jpg" alt="Josefine Magnussen" />
     </div>
     <div class="grid-text">
       <h2>Hei</h2>
@@ -35,6 +31,16 @@
           <li>SQL</li>
         </ul>
       </div>
+      <div class="container-text">
+        <div class="contact-button">
+          <a href="mailto:josefine.magnussen@hotmail.com" target="_top">Kontakt meg gjerne på mail</a>
+        </div>
+        <!-- <div class="contact-button">
+          <router-link class="link" to="/Projects">
+            <span @click="showNavbar = false">Eller se prosjektene mine her.</span>
+          </router-link>
+        </div> -->
+      </div>
       <div class="footer"></div>
     </div>
   </main>
@@ -50,21 +56,23 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  /* grid-gap: 10px; */
   grid-template-areas: "image content";
-    margin-bottom: 150px;
-    
-
+  margin-bottom: 150px;
 }
+
 .grid-item {
   grid-area: image;
 }
+
 .grid-text {
   grid-area: content;
   color: #2b1621;
   height: 300px;
   padding-right: 60px;
-
+  margin-bottom: 200px;
+}
+.container-text {
+  padding-top: 30px;
 }
 
 img {
@@ -91,9 +99,19 @@ li {
   border-left: 2px solid #402131;
   height: 300px;
 }
+.contact-button {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+text-align: center;
+  background: #f1f3f6;
+  box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1), -30px -30px 80px #ffffff,
+    inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+  border-radius: 108px;
+}
 
 @media only screen and (max-width: 800px) {
-  .footer{
+  .footer {
     padding-bottom: 150px;
   }
   body {
@@ -109,7 +127,6 @@ li {
     grid-template-areas:
       "image"
       "content";
-
   }
   .grid-text {
     grid-area: content;
