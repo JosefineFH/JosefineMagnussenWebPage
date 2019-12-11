@@ -99,16 +99,7 @@ li {
   border-left: 2px solid #402131;
   height: 300px;
 }
-.contact-button {
-  position: absolute;
-  width: 300px;
-  height: 50px;
-text-align: center;
-  background: #f1f3f6;
-  box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1), -30px -30px 80px #ffffff,
-    inset 4px 4px 20px rgba(255, 255, 255, 0.5);
-  border-radius: 108px;
-}
+
 
 @media only screen and (max-width: 800px) {
   .footer {
