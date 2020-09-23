@@ -1,5 +1,6 @@
 <template>
   <div class="prosject-container">
+  <h2>Changes are coming!</h2>
     <h1>Mine Prosjekter</h1>
     <section class="card">
       <img src="../assets/images/GirlCamp.png" alt />
@@ -67,4 +68,8 @@
 
 <style scoped>
 @import "../assets/Style/projects.css";
+h2{
+  text-align: center;
+  padding: 10%;
+}
 </style>
