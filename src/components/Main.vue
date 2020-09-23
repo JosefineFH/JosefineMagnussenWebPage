@@ -4,7 +4,7 @@
       <img class="image" src="../assets/images/Josefine Magnussen.jpg" alt="Josefine Magnussen" />
     </div>
     <div class="grid-text">
-      <p>Mitt navn er Josefine</p>
+      <p>Mitt navn er Josefine.</p>
       <p>
         Jeg er en IT-Utvikler fra Larvik. For det meste bruker jeg tiden
         foran pc der jeg koder for det mest frontend men også en del backend.
@@ -34,11 +34,7 @@
         <div class="contact-button">
           <a href="mailto:josefine.magnussen@hotmail.com" target="_top">Kontakt meg gjerne på mail</a>
         </div>
-        <!-- <div class="contact-button">
-          <router-link class="link" to="/Projects">
-            <span @click="showNavbar = false">Eller se prosjektene mine her.</span>
-          </router-link>
-        </div> -->
+<h2 class="changes">Changes are coming!</h2>
       </div>
       <div class="footer"></div>
     </div>
@@ -46,6 +42,10 @@
 </template>
 
 <style scoped>
+.changes {
+  padding-top: 50px;
+  text-align: center;
+}
 main {
   padding-bottom: 20px;
 }
@@ -67,6 +67,7 @@ main {
   grid-area: content;
   color: #2b1621;
   height: 300px;
+  padding-top: 10%;
   padding-right: 60px;
   margin-bottom: 200px;
 }
@@ -138,7 +139,7 @@ li {
   }
   .vl {
     border-left: 2px solid #402131;
-    height: 550px;
+    height: 300px;
   }
 }
 </style>
