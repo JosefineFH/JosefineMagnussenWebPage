@@ -2,7 +2,7 @@
   <nav class="navbar">
     <p @click="backToMain()" class="firstName">
       Josefine
-      <span class="lastName">Magnussen</span>
+      <span class="lastName">Holth</span>
     </p>
 <img class="menu" src="../assets/images/menu.png" alt="Menu" @click="showNavbar = !showNavbar">
       <!-- <a class="menu" @click="showNavbar = !showNavbar" >Menu</a> -->

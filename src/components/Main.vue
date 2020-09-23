@@ -4,7 +4,6 @@
       <img class="image" src="../assets/images/Josefine Magnussen.jpg" alt="Josefine Magnussen" />
     </div>
     <div class="grid-text">
-      <h2>Hei</h2>
       <p>Mitt navn er Josefine</p>
       <p>
         Jeg er en IT-Utvikler fra Larvik. For det meste bruker jeg tiden
