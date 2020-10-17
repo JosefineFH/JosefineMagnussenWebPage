@@ -16,11 +16,11 @@ const routes = [
     }, {
         path: '/about',
         Name: 'about',
-        component: () => import ('./components/about.vue')
+        component: () => import ('./components/About.vue')
     }, {
         path: '/contact',
         Name: 'contact',
-        component: () => import ('./components/contact.vue')
+        component: () => import ('./components/Contact.vue')
     }
 ]
 
