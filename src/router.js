@@ -1,40 +1,60 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
+import main from './components/main'
+// import about from './components/about'
+// import projects from './components/projects'
+// import contact from './components/contact'
 
-import main from './components/main.vue'
-import about from './components/about'
-import projects from './components/projects'
-import contact from './components/contact'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-export default new Router({
+const routes = [
+    {
+        path: '/',
+        name: 'main',
+        component: main
+    }, {
+        path: '/projects',
+        Name: 'projects',
+        component: () => import ('./components/projects')
+    }
+]
+
+const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes: [
-    {
-      path: '/',
-      name: 'main',
-      component: main
-    },
-
-    {
-      path: '/about',
-      Name: 'about',
-      component: about
-    },
-
-    {
-      path: '/projects',
-      Name: 'projects',
-      component: projects
-    },
-
-    {
-      path: '/contact',
-      Name: 'contact',
-      component: contact
-    }
-
-  ]
+  routes
 })
+
+export default router
+
+// export default new Router({
+// mode: 'history',
+// base: process.env.BASE_URL,
+// routes: [
+//     {
+//       path: '/',
+//       name: 'main',
+//       component: main
+//     },
+
+//     {
+//       path: '/about',
+//       Name: 'about',
+//       component: about
+//     },
+
+//     {
+//       path: '/projects',
+//       Name: 'projects',
+//       component: projects
+//     },
+
+//     {
+//       path: '/contact',
+//       Name: 'contact',
+//       component: contact
+//     }
+
+// ]
+// })
