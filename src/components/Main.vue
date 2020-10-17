@@ -100,7 +100,6 @@ li {
   height: 300px;
 }
 
-
 @media only screen and (max-width: 800px) {
   .footer {
     padding-bottom: 150px;
