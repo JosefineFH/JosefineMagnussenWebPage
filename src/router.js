@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import main from './components/main'
+import main from './components/Main'
 // import about from './components/about'
 // import projects from './components/projects'
 // import contact from './components/contact'
@@ -16,7 +16,7 @@ const routes = [
     }, {
         path: '/projects',
         Name: 'projects',
-        component: () => import ('./components/projects')
+        component: () => import ('./components/Projects')
     }
 ]
 
