@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import main from './components/main'
+
+import main from './components/main.vue'
 import about from './components/about'
 import projects from './components/projects'
 import contact from './components/contact'
-
 
 Vue.use(Router)
 
