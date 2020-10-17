@@ -5,6 +5,7 @@ import about from './components/about'
 import projects from './components/projects'
 import contact from './components/contact'
 
+
 Vue.use(Router)
 
 export default new Router({
