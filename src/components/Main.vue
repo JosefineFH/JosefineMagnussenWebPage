@@ -67,7 +67,7 @@ main {
   grid-area: content;
   color: #2b1621;
   height: 300px;
-  padding-top: 10%;
+  padding-top: 15%;
   padding-right: 60px;
   margin-bottom: 200px;
 }
@@ -76,7 +76,7 @@ main {
 }
 
 img {
-  padding: 3%;
+  padding: 15%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -84,7 +84,7 @@ img {
 }
 
 p {
-  line-height: 32px;
+  line-height: 35px;
 }
 h2 {
   padding-top: 5%;

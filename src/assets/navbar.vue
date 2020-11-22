@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="nav__bar">
     <img
       class="menuIcon"
       src="../assets/images/menu.png"
@@ -7,33 +7,34 @@
       v-on:click="available = !available"
     />
 
-    <div  v-bind:class="compClasses">
+    <div v-bind:class="compClasses">
       <div class="container">
         <ul>
-        <li>
-          <router-link class="link" to="/">
-          <span>Home</span>
-        </router-link>
-        </li>
-        <li>
-          <router-link class="link" to="/About">
-          <span>About</span>
-        </router-link>
-        </li>
-        <li>
-                <router-link class="link" to="/Projects">
-          <span>Projects</span>
-        </router-link>
-        </li>
-        <li>
-        <span>
-        <a
-          class="link"
-          href="mailto:josefine.magnussen@hotmail.com"
-          target="_top"
-          >Send mail</a>
-        </span>
-        </li>
+          <li>
+            <router-link class="link" to="/">
+              <span>Home</span>
+            </router-link>
+          </li>
+          <li>
+            <router-link class="link" to="/About">
+              <span>About</span>
+            </router-link>
+          </li>
+          <li>
+            <router-link class="link" to="/Projects">
+              <span>Projects</span>
+            </router-link>
+          </li>
+          <li>
+            <span>
+              <a
+                class="link"
+                href="mailto:josefine.magnussen@hotmail.com"
+                target="_top"
+                >Contact</a
+              >
+            </span>
+          </li>
         </ul>
       </div>
     </div>
@@ -45,16 +46,16 @@ export default {
   name: "about",
   data() {
     return {
-      available: false,
+     available: false,
     };
   },
 
   computed: {
-    compClasses: function (){
-      return{
+    compClasses: function () {
+      return {
         available: this.available,
-      }
-    }
+      };
+    },
   },
 
   methods: {
@@ -69,28 +70,48 @@ export default {
 /* nav{
   border: solid black 1px;
 } */
-.available ul{
-  display: block;
-  
+ul {
+  margin: 0;
+  padding: 0;
 }
-.container a{
- color: black;
- text-decoration: none;
- font-size: 26px;
- 
-}
-.menuIcon{
-  width: 30px;
-  margin: 30px 0px 0px 30px;
+.nav__bar {
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  background: #ffffff;
 }
 
-ul{
-  padding-left: 30px;
+.available ul {
+  display: block;
+}
+.container {
+  z-index: 1;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+}
+.container a {
+  color: black;
+  text-decoration: none;
+  font-size: 26px;
+  padding: 30px;
+}
+.menuIcon {
+  width: 30px;
+  margin: 30px 30px 30px 30px;
+}
+
+ul {
   display: none;
   color: #fff;
-  line-height: 45px;
+  line-height: 60px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
 }
 
+a:hover {
+  color: #cc0e74;
+  font-weight: bold;
+  font-size: 27px;
+}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (min-width: 400px) {
@@ -101,18 +122,24 @@ ul{
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (min-width: 800px) {
-  ul{
+  ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
   }
-  li{ 
+  li {
     padding: 0 15px;
   }
-  .menuIcon{
+  .menuIcon {
     display: none;
   }
-}
 
+  .container {
+    padding: 10px;
+
+    z-index: 0;
+    position: static;
+  }
+}
 </style>
