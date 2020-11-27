@@ -12,6 +12,7 @@
 <script>
 import NavBar from './assets/navbar.vue'
 import Footer from './assets/footer.vue'
+
 export default {
   components: {
     NavBar: NavBar,
