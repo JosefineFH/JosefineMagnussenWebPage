@@ -18,18 +18,13 @@
       <div class="sections">
         <h1>Hello World!</h1>
         <p>
-          Mitt navn er Josefine. Jeg er en webutvikler. Jeg bruker tiden min på
-          personlige prosjekter og lærer meg mer om PHP, Javascript, HTML og
-          CSS.
+          Jeg heter Josefine. Jeg er nettutvikler. Jeg bruker fritiden min på personlige prosjekter og lærer mer om PHP, Javascript, HTML og CSS.
         </p>
         <p>
-          På fritiden liker jeg og holde på med fotografering, tilbringe tid ute
-          i naturen og selvfølgelig spilling.
+          Jeg  liker også holde på med fotografering, tilbringe tid ut i naturen og selvfølgelig gaming.
         </p>
         <p>
-          Hvis du har en idé om et nettsted eller ditt nåværende nettsted
-          trenger en oppgradering så ta gjerne kontakt med meg så kan vi se hva
-          vi kan få til. Eller vis du vil snakke om jobb muligheter.
+          Hvis du har en idé om et nettsted eller ditt nåværende nettsted trenger en oppgradering så ta gjerne kontakt med meg så kan vi se hva vi kan få til. Eller hvis du vil snakke med meg om en jobb muligheter, kontakt meg gjerne.
         </p>
         <div class="center">
           <button @click="aboutMe()">Les Mere</button>
@@ -89,14 +84,14 @@
   </div>
 </template>
 <script>
-import axios from "axios";
+// import axios from "axios";
 
 export default {
-  data() {
-    return {
-      projects: [],
-    };
-  },
+//   data() {
+//     return {
+//       projects: [],
+//     };
+//   },
   //  mounted () {
   //   axios
   //     .get('data.json')
@@ -107,15 +102,12 @@ export default {
   // },
 
   methods: {
-    aboutMe() {
-      this.$router.push("/about");
-    },
-  },
-};
+    aboutMe () {
+      this.$router.push('/about')
+    }
+  }
+}
 </script>
-<!-- <style scoped>
-@import "../assets/Style/style.css";
-</style> -->
 <style scoped>
 
 img {
@@ -158,7 +150,6 @@ h1 {
   font-size: 10vw;
   line-height: 7vw;
   margin: 5px;
-  
   text-align: center;
   font-weight: lighter;
   color: #693433;
@@ -216,7 +207,8 @@ a:hover{
   text-align: center;
   padding-top: 5%;
   color: #7b6950;
-}}
+  }
+}
 @media only screen and (min-width: 400px) {
   img{
     width: 90%;
@@ -242,13 +234,13 @@ a:hover{
   }
   p{
     font-size: 1.2rem
-  } 
+  }
   .container {
     margin-bottom: 150px;
     min-height: 300px;
     width: 100%;
     grid-template-columns: 10% 80% 10%;
-  } 
+  }
   .content {
     display: grid;
     grid-template-columns: 60% 40%;
