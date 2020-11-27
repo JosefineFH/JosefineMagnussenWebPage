@@ -121,7 +121,7 @@ a:hover {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (min-width: 800px) {
+@media only screen and (orientation: landscape) {
   ul {
     display: flex;
     flex-direction: row;
