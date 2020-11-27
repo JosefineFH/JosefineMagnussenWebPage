@@ -1,5 +1,5 @@
 <template>
     <div>
-    <p>Josefine Holth</p>
+    <p>&copy; Holth Development </p>
     </div>
 </template>
