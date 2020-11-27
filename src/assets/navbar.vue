@@ -12,17 +12,17 @@
         <ul>
           <li>
             <router-link class="link" to="/">
-              <span>Home</span>
+              <span>Hjem</span>
             </router-link>
           </li>
           <li>
             <router-link class="link" to="/About">
-              <span>About</span>
+              <span>Om Meg</span>
             </router-link>
           </li>
           <li>
             <router-link class="link" to="/Projects">
-              <span>Projects</span>
+              <span>Prosjekter</span>
             </router-link>
           </li>
           <li>
@@ -31,7 +31,7 @@
                 class="link"
                 href="mailto:josefine.magnussen@hotmail.com"
                 target="_top"
-                >Contact</a
+                >Kontakt meg</a
               >
             </span>
           </li>
