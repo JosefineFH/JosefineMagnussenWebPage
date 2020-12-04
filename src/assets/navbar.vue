@@ -43,27 +43,27 @@
 </template>
 <script>
 export default {
-  name: "about",
-  data() {
+  name: 'about',
+  data () {
     return {
-     available: false,
-    };
+      available: false
+    }
   },
 
   computed: {
     compClasses: function () {
       return {
-        available: this.available,
-      };
-    },
+        available: this.available
+      }
+    }
   },
 
   methods: {
-    backToMain() {
-      this.$router.push("/");
-    },
-  },
-};
+    backToMain () {
+      this.$router.push('/')
+    }
+  }
+}
 </script>
 
 <style scoped>
