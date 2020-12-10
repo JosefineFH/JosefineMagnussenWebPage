@@ -33,7 +33,7 @@
       </div>
     </section>
 
-    <section class="sectionsWithColor" style="background-color: #ebe8e1">
+    <section class="sectionsWithColor" style="background-color: #F7F7F5">
       <h1>Mine Skills</h1>
       <div class="skillContainer">
         <ul>
@@ -120,7 +120,7 @@ img {
 h1 {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
-  color: #693433;
+  color: #1B5E36;
   text-transform: uppercase;
   text-align: center;
 }
@@ -152,7 +152,7 @@ h1 {
   margin: 5px;
   text-align: center;
   font-weight: lighter;
-  color: #693433;
+  color: #1B5E36;
 }
 
 .sections {
@@ -181,7 +181,7 @@ a {
 .center > button:hover,
 a:hover{
   font-weight: bold;
-  color: #693433;
+  color: #1B5E36;
 }
 
 .center {
@@ -281,7 +281,7 @@ a:hover{
   }
   .grid-text {
     grid-area: content;
-    color: #2b1621;
+    color: #1B5E36;
     height: 300px;
     margin-bottom: 200px;
     padding-left: 60px;
@@ -298,7 +298,7 @@ a:hover{
     padding: 0;
   }
   .vl {
-    border-left: 2px solid #402131;
+    border-left: 2px solid #1B5E36;
     height: 300px;
     grid-template-columns: 1fr 1fr 1fr;
   }
