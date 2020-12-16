@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "id": "0",
+      "finishedText": "On Going",
+      "img": "static/projects/ecommerce.png",
+      "projectName": "GameShop",
+      "codeLink": "",
+      "liveDemo": "",
+      "language":[
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "1",
+      "finishedText": "Finished",
+      "img": "",
+      "projectName": "Girl Camp",
+      "codeLink": "https://github.com/JosefineFH/Portflio/tree/master/girlcamp",
+      "liveDemo": "https://girlcamp01.firebaseapp.com/#/",
+      "language":[
+
+      ]
+    },
+    {
+      "id": "2",
+      "finishedText": "Finished",
+      "img": "",
+      "projectName": "Employee Manager",
+      "codeLink": "",
+      "liveDemo": "",
+      "language":[
+
+      ]
+    }
+  ]
+}
