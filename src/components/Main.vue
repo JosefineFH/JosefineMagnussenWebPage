@@ -159,6 +159,14 @@ h1 {
   margin: 25% 10%;
   font-size: 1rem;
 }
+.section > h1{
+  text-align: center;
+  margin: 4rem 0 4rem 0;
+    font-weight: lighter;
+
+  font-size: 3rem;
+  font-family: 'Nixie One', cursive;
+}
 
 .sectionsWithColor {
   padding: 10% 10%;
