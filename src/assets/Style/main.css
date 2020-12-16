@@ -16,14 +16,14 @@ h1 {
 }
 
 .projects {
-    border: #402131 1.5px solid;
+    border: #1B5E36 1.5px solid;
     font-size: 18px;
     border-radius: 1px;
     padding: 10px;
 }
 .projects:hover {
-    border: #402131 1.5px solid;
-    background: #402131;
+    border: #1B5E36 1.5px solid;
+    background: #1B5E36;
     color: white;
     transition: all 0.35s;
 }
