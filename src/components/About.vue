@@ -80,7 +80,7 @@ img {
   font-size: 20px;
 }
   .container {
-    padding-top: 8%;
+    padding-top: 10%;
     min-height: 300px;
     grid-template-columns: 20% 60% 20%;
         margin: 0 3% 0 3%;

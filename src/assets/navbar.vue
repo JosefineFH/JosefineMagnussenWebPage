@@ -113,15 +113,8 @@ a:hover {
   font-size: 27px;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (min-width: 400px) {
-  /* nav{
-    background-color: lightgreen;
-  } */
-}
-
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width: 800px) {
   ul {
     display: flex;
     flex-direction: row;
