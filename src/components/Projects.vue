@@ -3,7 +3,7 @@
   <h2>Changes are coming!</h2>
     <h1>Mine Prosjekter</h1>
     <section class="card">
-      <img src="../assets/images/GirlCamp.png" alt />
+      //<img src="../assets/images/GirlCamp.png" alt />
       <div>
         <h3>Girl Camp</h3>
         <p>Frontend prosjekt der jeg i hovedsak kun har bruk rammeverket Vue.js.</p>
@@ -13,7 +13,7 @@
           href="https://github.com/JosefineFM/Portflio/tree/master/Vue/girlcamp"
         >Code på GitHub</a>
         <br />
-        <a class="links" href="https://girlcamp01.firebaseapp.com/#/">Live Demo</a>
+        <a class="links" href="https://techcamp.netlify.app/">Live Demo</a>
       </div>
     </section>
 
