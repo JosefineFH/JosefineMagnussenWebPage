@@ -11,10 +11,11 @@
 
 .card {
     display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 2rem; */
     background: #f1f1f1;
     margin-bottom: 2rem;
+    align-items: center;
 }
 
 .card h3 {
@@ -23,10 +24,10 @@
 
 
 .card>div {
-    padding: 2rem;
+    padding: 20px;
 }
 
-.card:nth-child(even) img {
+.card:nth-child(odd) img {
     order: 2;
 }
 
@@ -39,8 +40,7 @@
     width: 400px;
 } 
 .card img {
-    padding: 20px;
-    width: 200px;
+    width: 100%;
 }
 /* -------------------------------------------------------------------------- */
 /*                                    media                                   */
@@ -79,7 +79,7 @@
 
 
 a {
-    color: #333;
+    color: #95343f;
     text-decoration: none;
 }
 

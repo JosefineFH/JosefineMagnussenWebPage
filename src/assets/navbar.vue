@@ -108,7 +108,7 @@ ul {
 }
 
 a:hover {
-  color: #1B5E36;
+  color: #95343f;
   font-weight: bold;
   font-size: 27px;
 }

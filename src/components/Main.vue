@@ -56,6 +56,7 @@
           <li>HTML</li>
           <li>CSS</li>
           <li>Git</li>
+          <li>Vue.js</li>
         </ul>
       </div>
     </section>
