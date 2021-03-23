@@ -15,6 +15,7 @@
           >Live Demo</a
         >
       </div>
+      <img src="../assets/images/projects_img/rainydays.png" alt="Rainydays">
     </section>
 
     <section class="card">
