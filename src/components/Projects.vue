@@ -6,7 +6,7 @@
         <h3>Rainydays</h3>
         <h5>Ongoing</h5>
         <p>E - Commercial site | HTML and CSS</p>
-        <p>Dette er et skoleprosjekt som jeg holder på med</p>
+        <p>Dette er et skoleprosjekt som jeg er ferdig med og fikk karakter 9/10 på. </p>
         <a class="links" href="https://github.com/JosefineFH/ecommerce-Rainyday"
           >Code på GitHub</a
         >
