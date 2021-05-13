@@ -7,12 +7,12 @@
           <div>
             <img class="laptop_img"
               src="../assets/images/header_img.png"
-              alt="Josefine Fevang Holth laptop image"
+              alt="Josefine Fevang Holth"
               srcset=""
             />
-              <img class="img_mobile"
+                        <img class="img_mobile"
               src="../assets/images/header_img_mobile.png"
-              alt="Josefine Fevang Holth mobile image"
+              alt="Josefine Fevang Holth"
               srcset=""
             />
           </div>
@@ -42,12 +42,12 @@
         </p>
         <div class="center">
           <button @click="aboutMe()">Les Mere</button>
-          <a href="mailto:josefine.holth@Mail.com">Kontakt Meg</a>
+          <a href="mailto:YourMail@Mail.com">Kontakt Meg</a>
         </div>
       </div>
     </section>
 
-    <section class="sectionsWithColor my_skills" style="background-color: #F7F7F5">
+    <section class="sectionsWithColor" style="background-color: #F7F7F5">
       <h1>Mine Skills</h1>
       <div class="skillContainer">
         <ul>
@@ -99,7 +99,23 @@
   </div>
 </template>
 <script>
+// import axios from "axios";
+
 export default {
+  //   data() {
+  //     return {
+  //       projects: [],
+  //     };
+  //   },
+  //  mounted () {
+  //   axios
+  //     .get('data.json')
+  //     .then((response) => {
+  //       this.projects = response.data
+  //       console.log()
+  //       })
+  // },
+
   methods: {
     aboutMe () {
       this.$router.push('/about')
@@ -108,8 +124,7 @@ export default {
 }
 </script>
 <style scoped>
-@import "../assets/Style/main.css";
-/* img {
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -154,9 +169,8 @@ h1 {
 }
 
 .sections {
-  margin: auto;
+  margin: 25% 10%;
   font-size: 1rem;
-  max-width: 1000px;
 }
 .section > h1 {
   text-align: center;
@@ -334,5 +348,5 @@ a:hover {
   .laptop_img{
   display: inline;
 }
-} */
+}
 </style>
